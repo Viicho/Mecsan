@@ -1,0 +1,418 @@
+:root {
+	--grey: #e8e8e8;
+	--white: #f8f8f8;
+	--black: #2c2c2c;
+	--bs-border-color-translucent: rgba(0, 0, 0, 0.09) !important;
+}
+
+:not(input):not(textarea) {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+}
+
+body {
+	background-image: url('../img/bg.ff69201f.jpg');
+	background-size: cover;
+}
+
+/* Menu  */
+
+@media (min-width: 993px){
+	.dropdown-menu{
+		display: flex;
+	}
+	
+}
+
+.logo {
+	height: 80px;
+	object-fit: cover;
+	width: 120px;
+}
+
+.imagen-menu {
+	height: 20px;
+}
+
+.navbar {
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+	margin: 15px;
+	border-radius: 15px;
+	background-color: rgba(194, 191, 191, 0.25);
+}
+
+.navbar-nav {
+	margin-left: 10px;
+}
+.navbar-nav > * {
+	margin-left: 15px;
+}
+
+.nav-link:not(:last-child):hover {
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+
+.emoji {
+	animation: bounce;
+}
+
+/* Productos */
+
+.bg-slide {
+	background-color: white;
+}
+
+.slider-body {
+	display: flex;
+	justify-content: center;
+}
+
+.titulo-productos {
+	text-align: center;
+	margin: 40px 0;
+}
+.productos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+#card-area {
+	margin-bottom: 40px;
+}
+
+.slide img {
+	height: 400px;
+	object-fit: cover;
+}
+
+section {
+	padding: 80px 0;
+}
+
+.productos > div {
+	transition: transform 0.7s, box-shadow 0.7s;
+}
+
+.productos > div:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 768px) {
+	.productos {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.bg-soluciones > .container > div {
+		display: flex;
+		flex-direction: column;
+
+		> div:last-child {
+			padding: 15px;
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1250px) {
+	.bg-soluciones > .container > div {
+		display: flex;
+		flex-direction: column;
+
+		> div:last-child {
+			padding: 15px;
+		}
+	}
+
+	.productos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.productos-footer {
+		justify-self: start;
+		margin: 20px;
+	}
+	.navbar-collapse {
+		justify-content: end;
+	}
+}
+
+@media (min-width: 1251px) {
+	.productos {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.navbar-collapse {
+		justify-content: end;
+	}
+}
+
+.card-footer {
+	background-color: white !important;
+}
+
+.card-footer .btn {
+	width: 70%;
+}
+
+.productos img {
+	height: 170px;
+}
+
+.text-slider {
+	justify-items: center;
+}
+
+/* Soluciones */
+
+.bg-soluciones > .container {
+	padding-bottom: 80px;
+
+	> div {
+		background-color: rgba(194, 191, 191, 0.25);
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.container-image-soluciones {
+	flex: 0 0 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-soluciones {
+	height: 180px;
+	margin: 0 30px;
+	object-fit: cover;
+}
+
+/* Footer */
+
+.bg-footer {
+	background-color: rgba(194, 191, 191, 0.25);
+}
+
+footer {
+	padding: 40px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+}
+
+.productos-footer ul {
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+@media (max-width: 720px) {
+	footer {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: start;
+		gap: 25px;
+	}
+	.logo-footer {
+		width: 250px;
+	}
+}
+
+@media (min-width: 721px) and (max-width: 960px) {
+	footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 961px) {
+	footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.logo-footer {
+		width: 450px;
+	}
+}
+
+/* Empresa */
+
+.titulo-empresa {
+	text-align: center;
+}
+
+.container-img {
+	width: 80dvw;
+	max-width: 100%;
+	min-width: 450px;
+	margin: 20px auto 20px auto;
+}
+
+.container-img img {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+
+.container-empresa > div:nth-child(2) {
+	margin: 80px 0;
+}
+.container-empresa > div:nth-child(3) {
+	background-color: rgba(194, 191, 191, 0.25);
+	padding: 30px;
+	margin-bottom: 80px;
+	display: flex;
+	gap: 30px;
+	text-align: center;
+	p {
+		margin-top: 10px;
+	}
+}
+
+/* Contactanos */
+
+form {
+	padding: 10px 0;
+	margin: 26px 0;
+}
+
+form button {
+	margin: 20px 0;
+}
+
+.contacto {
+	margin: 50px 0;
+	> div {
+		margin: 15px 0;
+	}
+	b {
+		margin-left: 10px;
+	}
+}
+
+/* Listado de productos */
+
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	padding: 10px 10%;
+}
+
+.box-area {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 40px;
+	place-items: center;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	width: 250px;
+	height: 300px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background-color: white;
+}
+
+.box img {
+	width: 240px;
+	object-fit: cover;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+	margin: 0 auto;
+}
+
+.overlay {
+	height: 0;
+	width: 100%;
+	background: linear-gradient(transparent, #1c1c1c 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+
+.overlay h5 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 18px;
+	color: white;
+}
+
+.overlay a {
+	margin-top: 10px;
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+
+.overlay p {
+	color: white;
+}
+
+.box:hover img {
+	transform: scale(1.1);
+}
+
+.box:hover .overlay {
+	height: 100%;
+}
+
+/* productos/id */
+
+.form-reserva {
+	margin: 0 !important;
+}
+
+.img {
+	height: 328px;
+}
+
+.table > :not(caption) > * > * {
+	background-color: transparent !important;
+}
+
+.descripcion {
+	margin: 70px 0px !important;
+}
+
+.reserva {
+	width: max-content !important;
+}
+
+/* Swiper */

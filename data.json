@@ -1,0 +1,129 @@
+{
+	"productos": [
+		{
+			"categoria": "Flujo",
+			"items": [
+				{
+					"id": 1,
+					"nombre": "Medidor de Flujo Ultrasónico",
+					"descripcion": "Medidor de flujo no invasivo para líquidos.",
+					"marca": "Fluke",
+					"modelo": "TFM-1000",
+					"precio": 1500.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				},
+				{
+					"id": 2,
+					"nombre": "Medidor de Flujo Electromagnético",
+					"descripcion": "Ideal para medir flujos en tuberías conductoras.",
+					"marca": "Siemens",
+					"modelo": "MAG5100W",
+					"precio": 2000.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				}
+			]
+		},
+		{
+			"categoria": "Nivel",
+			"items": [
+				{
+					"id": 3,
+					"nombre": "Transmisor de Nivel Ultrasónico",
+					"descripcion": "Para mediciones de nivel sin contacto en líquidos y sólidos.",
+					"marca": "Honeywell",
+					"modelo": "SmartLine",
+					"precio": 800.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				},
+				{
+					"id": 4,
+					"nombre": "Medidor de Nivel por Radar",
+					"descripcion": "Para mediciones precisas de nivel en entornos difíciles.",
+					"marca": "Endress+Hauser",
+					"modelo": "Micropilot FMR50",
+					"precio": 1200.0,
+					"moneda": "USD",
+					"disponibilidad": "Bajo pedido"
+				}
+			]
+		},
+		{
+			"categoria": "Presión",
+			"items": [
+				{
+					"id": 5,
+					"nombre": "Transmisor de Presión Diferencial",
+					"descripcion": "Transmisor de alta precisión para aplicaciones industriales.",
+					"marca": "Rosemount",
+					"modelo": "3051CD",
+					"precio": 700.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				},
+				{
+					"id": 6,
+					"nombre": "Manómetro Digital",
+					"descripcion": "Manómetro digital portátil para mediciones rápidas.",
+					"marca": "WIKA",
+					"modelo": "CPG1500",
+					"precio": 500.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				}
+			]
+		},
+		{
+			"categoria": "Temperatura",
+			"items": [
+				{
+					"id": 7,
+					"nombre": "Termopar Tipo K",
+					"descripcion": "Termopar para medición de temperaturas altas.",
+					"marca": "Omega",
+					"modelo": "KQXL-14G",
+					"precio": 30.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				},
+				{
+					"id": 8,
+					"nombre": "Transmisor de Temperatura",
+					"descripcion": "Transmisor de temperatura para uso industrial.",
+					"marca": "ABB",
+					"modelo": "TTH300",
+					"precio": 400.0,
+					"moneda": "USD",
+					"disponibilidad": "Bajo pedido"
+				}
+			]
+		},
+		{
+			"categoria": "Válvulas",
+			"items": [
+				{
+					"id": 9,
+					"nombre": "Válvula de Control Neumática",
+					"descripcion": "Válvula para control de flujo de líquidos y gases.",
+					"marca": "Fisher",
+					"modelo": "DVC6200",
+					"precio": 2500.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				},
+				{
+					"id": 10,
+					"nombre": "Válvula de Bola",
+					"descripcion": "Válvula de bola para aplicaciones generales.",
+					"marca": "Apollo",
+					"modelo": "70-100",
+					"precio": 150.0,
+					"moneda": "USD",
+					"disponibilidad": "En stock"
+				}
+			]
+		}
+	]
+}
